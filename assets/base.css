@@ -901,8 +901,6 @@ summary::-webkit-details-marker {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing);
-    column-gap: 8px;
-    row-gap: 8px;
   }
 }
 
@@ -1015,8 +1013,6 @@ summary::-webkit-details-marker {
   .grid--4-col-desktop .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
     max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
-    max-width: 24%;
-        width: 24%;
   }
 
   .grid--3-col-desktop .grid__item {
@@ -1078,7 +1074,6 @@ summary::-webkit-details-marker {
 
   .grid--2-col-tablet-down .grid__item {
     width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
-    width: 50%;
   }
 
   .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item,
@@ -1253,7 +1248,6 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
-  
 }
 
 .button:before,
@@ -1701,7 +1695,6 @@ details[open] > .share-button__fallback {
   position: absolute;
   top: calc(50% - 0.2rem);
   right: calc(var(--inputs-border-width) + 1.5rem);
-  right: 0;
 }
 
 .select__select,

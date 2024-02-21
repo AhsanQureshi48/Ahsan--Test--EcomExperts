@@ -175,13 +175,13 @@ class CartItems extends HTMLElement {
 
         publish(PUB_SUB_EVENTS.cartUpdate, { source: 'cart-items', cartData: parsedState, variantId: variantId });
 
-        var targt_del = document.querySelector('cart-remove-button[variant_id="41950941610038"]');
+        var targt_del = document.querySelector('cart-remove-button[variant_id="41162705076272"]');
         var targt_index = targt_del.getAttribute('data-index'); 
         const itemsRemoved = parsedState.items_removed;
         itemsRemoved.forEach((removedItem) => {
           const variantId = removedItem.variant_id;
           
-          if(variantId == 41996075073590){
+          if(variantId == 41162704814128){
             targt_del.click();
           }
         });

@@ -94,8 +94,8 @@ if (!customElements.get('product-form')) {
               console.log('response',response);
               
               let check_id = response.variant_id;
-              if(check_id == 41996075073590){
-                addToCart(41950941610038,1)
+              if(check_id == 41162704814128){
+                addToCart(41162705076272,1)
               }else{             
               this.cart.renderContents(response);
               }

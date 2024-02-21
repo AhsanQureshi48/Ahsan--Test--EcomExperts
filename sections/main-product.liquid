@@ -469,12 +469,11 @@
                           name="options[{{ option.name | escape }}]"
                           form="{{ product_form_id }}"
                         >
-                              {%if option.name == 'Size'%}
-            
+                            {% if option.name == 'Size'%}
                               <option value="unselected">
-                                Select Size
+                                Unselected
                               </option>
-                              {%endif%}
+                            {% endif %}
                           {%- for value in option.values -%}
                             
                             <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>

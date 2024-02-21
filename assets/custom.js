@@ -17,17 +17,6 @@ inputs.forEach((input)=>{
   })
 })
 
-// retargets
-size_dropdown.addEventListener('change',(e)=>{
-  let size_dropdown_val = e.target.value;
-  document.querySelector('fieldset.js.product-form__input.Size input[value="'+size_dropdown_val+'"]').click();
-})
-
-// make size select unselected
-document.addEventListener('DOMContentLoaded',()=>{
-  size_dropdown.value = 'unselected';
-})
-
 // global add to cart function
 function addToCart(variantId, maxQuantity) {
   fetch('/cart/add.js', {
@@ -50,3 +39,19 @@ function addToCart(variantId, maxQuantity) {
     window.location = window.routes.cart_url;
   })
 }
+
+// make size select unselected
+document.addEventListener('DOMContentLoaded',()=>{
+  size_dropdown.value = 'unselected';
+})
+
+// retargets
+if(size_dropdown) {
+  size_dropdown.addEventListener('change',(e)=>{
+    let size_dropdown_val = e.target.value;
+    document.querySelector('fieldset.js.product-form__input.Size input[value="'+size_dropdown_val+'"]').click();
+  })
+}
+
+
+

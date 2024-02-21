@@ -73,10 +73,10 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-          {% if product.handle == 'dark-winter-jacket' %}
-          You cannot buy this product 
+          {% if product.handle == 'soft-winter-jacket' %}
+            You cannot buy this product 
           {% else %}
-          {% if product.handle == 'black-leather-bag' %}
+          {% if product.handle == 'handbag' %}
             <p style="font-size: 12px;">Selet Black & Medium to get addtional product to your cart</p>
           {% endif %}  
           <button
